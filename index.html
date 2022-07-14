@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS.js"></script>
+    <link rel="stylesheet" href="CSS.css">
+    <title>Document</title>
+</head>
+<body onload="F5()">
+    <div class="container">
+        <div class="paadingvao">
+            <div class="paadingcenter"> 
+                <div class="banner">
+                    <h4>LỚP CNT20C2 - HỌ VÀ TÊN: LÊ TRIỆU KHẢI</h4>
+                </div>
+            </div>
+            <div class="headding">
+                <marquee id="marquee"  behavior="right" direction="left">Hôm nay là Thứ Tư ngày 23</marquee>
+            </div>
+            <div class="content">
+                <div class="tourism">
+                    <h2>Địa điểm du lịch</h2>
+                    <div class="hi">
+                        <ol type="I">
+                            <li>Địa điểm du lịch trong nước
+                                <ol type="1"  class="maured">
+                                    <li>Sapa</li>
+                                    <li>Đà Nẵng</li>
+                                    <li>Huế</li>
+                                    <li>Hà Nội</li>
+                                </ol>
+                            </li>
+                            <li>Địa điểm du lịch nước ngoài
+                                <ol type="1" class="mauaqua">
+                                    <li>Campuchia</li>
+                                    <li>Thái Lan</li>
+                                    <li>Singabo</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="giatour">
+                    <h2>Giá Tour</h2>
+                    <ul>Trong nước
+                        <li class="mauaqua1">Đà Nẵng-Huế <span>:4,290,000 đồng</span></li>
+                        <li class="mauyellow">Hà Nội - Sapa <span>:8,490,000 đồng</span></li>
+                        <li>Huế - Hà Nội <span>:6,990,000 đồng</span></li>
+                    </ul>
+                    <ul>Ngoài nước
+                        <li class="mauaqua1">Campuchia (3 ngày- 2 đêm) <span>:4,290,000 đồng</span></li>
+                        <li class="mauyellow">Thái Lan (3 ngày - 2 đêm) <span>:8,490,000 đồng</span></li>
+                        <li>Singabo (3 ngày - 2 đêm) <span>:6,990,000 đồng</span></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <div class="um">
+                        <h2>Đăng nhập</h2>
+                        <div class="logintext">
+                            <input type="text" placeholder="Nhập tài khoản của bạn">
+                            <input type="password" placeholder="Nhập mật khẩu">
+                        </div>
+                        <button>Đăng nhập</button>
+                    </div>
+                </div>
+            </div>
+            <div class="quanlytour">
+                <h1>Quản Lý Tour Du Lịch</h1>
+            </div>
+            <div class="inputdata">
+                <ul class="hoso">
+                    <li>
+                        <div class="withlable">
+                            <label for="diadiem">Điểm đến</label>
+                        </div>
+                        <input id="diadiem" type="text" placeholder="Địa điểm">
+                    </li>
+                    <li>
+                        <div class="withlable">
+                            <label for="thoigian">Thời gian</label>
+                        </div>
+                        <input id="thoigian" type="text" placeholder="Số ngày">
+                    </li>
+                    <li>
+                        <div class="withlable">
+                            <label for="gia">Giá tour</label>
+                        </div>
+                        <input id="gia" type="text" placeholder="Giá Tour">
+                    </li>
+                    <li>
+                        <div class="withlable">
+                            <label for="hinhthuc">Hình thức</label>
+                        </div>
+                        <select name="" id="hinhthuc">
+                            <option value="Trong nước" id="hi">Trong nước</option>
+                            <option value="Ngoài nước">Ngoài nước</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="nut">
+                <button onclick="them()" id="add">Thêm</button>
+                <button id="sua" onclick="them()">Sửa</button>
+                <button id="boqua" onclick="boqua()">Cancel</button>
+            </div>
+            <div class="tabledata">
+                <table id="none">
+                    <tr class="data">
+                        <td>Điểm Đến</td>
+                        <td>Số Ngày</td>
+                        <td>Giá Tour</td>
+                        <td>Hình Thức</td>
+                        <td>Tác Vụ</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="kythi">
+                <h2>Thi học kỳ 2: Năm học 2020 - 2021</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
